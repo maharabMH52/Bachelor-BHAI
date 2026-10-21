@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <div id="complain_form" class="container">
+        <h1 class="title">Complaint Form</h1>
+        
+        <!-- Step 1: Select Category -->
+        <form id="categoryForm" class="form">
+            <div class="form-group">
+                <label for="category" class="category_name">Complaint Category</label>
+                <div class="radio-group">
+                    <input type="radio" id="house-owner" name="category" value="house-owner">
+                    <label for="house-owner">House Rental</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="appliance-seller" name="category" value="appliance-seller">
+                    <label for="appliance-seller">Home Appliance</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="meal-service" name="category" value="meal-service">
+                    <label for="meal-service">Meal Service</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="home-shifting" name="category" value="home-shifting">
+                    <label for="home-shifting">Home Shifting</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="roommate-seeker" name="category" value="roommate-seeker">
+                    <label for="roommate-seeker">Roommate Seekeing</label>
+                </div>
+            </div>
+            <button type="button" id="categorySubmit" class="btn">Next</button>
+        </form>
+
+        <!-- Step 2: Complainant Info -->
+        <form id="complainantForm" class="form hidden">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            <button type="button" id="complainantSubmit" class="btn">Next</button>
+        </form>
+
+        <!-- Step 3: Complaint Details -->
+        <form id="finalForm" class="form hidden">
+            <div class="form-group">
+                <label for="description">Detailed Description</label>
+                <textarea id="description" name="description" placeholder="Provide as much detail as possible..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="preferredResolution">Preferred Resolution (Optional)</label>
+                <textarea id="preferredResolution" name="preferredResolution" placeholder="Let us know how you would like the issue resolved..."></textarea>
+            </div>
+            <button type="submit" id="submitComplaint" class="btn">Submit Complaint</button>
+        </form>
+
+    </div>
+
+    <script src="./assets/js/complain.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachelor Bhai Meal Service</title>
+  <link rel="stylesheet" href="./assets/css/meal_pack.css">
+</head>
+<body>
+  <section id="meal-package">
+      <div class="meal_pac_container">
+        <h1>Bachelor Bhai Meal Service</h1>
+        
+        <!-- Meal plans are displayed in grid -->
+        <div class="meal-plans">
+          
+          <!-- Group A on the left -->
+          <div class="meal-group">
+            <h2>Group A Menu (Fri-Sun)</h2>
+            <div class="meal-day" id="friday-menu"></div>
+            <div class="meal-day" id="saturday-menu"></div>
+            <div class="meal-day" id="sunday-menu"></div>
+          </div>
+
+          <!-- Group B on the right -->
+          <div class="meal-group">
+            <h2>Group B Menu (Mon-Thu)</h2>
+            <div class="meal-day" id="monday-menu"></div>
+            <div class="meal-day" id="tuesday-menu"></div>
+            <div class="meal-day" id="wednesday-menu"></div>
+            <div class="meal-day" id="thursday-menu"></div>
+          </div>
+          
+        </div>
+
+        <div class="selection-box">
+          <h2>Select Your Plan</h2>
+
+          <div class="meal_checkbox">
+            <h3>Choose Groups:</h3>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="group-a-checkbox">
+                Group A
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="group-b-checkbox">
+                Group B
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <h3>Choose Duration:</h3>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="weeks" value="1" checked> 1 Week
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="weeks" value="2"> 2 Weeks
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="weeks" value="3"> 3 Weeks
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <h3>Your Selection:</h3>
+            <p id="selected-groups">Groups: None</p>
+            <p id="selected-weeks">Duration: 1 week</p>
+            <p id="total-price" class="font-bold">Total Price: $0</p>
+          </div>
+
+          <button class="btn" id="add-to-cart" disabled>Add to Cart</button>
+        </div>
+
+        <!-- Profile section to show after adding to cart -->
+        <div class="profile-section" id="profile-section">
+          <h2>User Profile</h2>
+          <p id="profile-info">Meal Plan: None</p>
+        </div>
+      </div>
+
+      <!-- Modal for confirmation -->
+      <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+          <h2>Success!</h2>
+          <p>Your meal plan has been added to the cart.</p>
+          <button id="close-modal-btn" class="btn">OK</button>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="./assets/js/meal_pack.js"></script>
+  </div>
+</body>
+</html>

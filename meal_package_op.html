@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+  <!---favicon-------------------->
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!----custom css link--->
+
+  <link rel="stylesheet" href="./assets/css/style-prefix.css" >
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!-- Header part work--------------------------->
+
+  <section id="header">
+
+    <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="REBYELL LOGO"> </a>
+
+    <div>
+      <ul id="navbar">
+        
+        <li><a  href="index.html">Home</a></li>
+        <li><a class="active" href="#">Feature</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+        <li>
+          <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search">
+            <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+          </div>
+      
+          
+        </li>
+        <li>
+          <a id="lg-bag" href="cart.html"><i class="fa-regular fa-heart"></i></a>
+        </li>
+        <!--close icon-->
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+        
+        <li>
+          <a  ></i></i></a>
+        </li>
+        
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+          </div>
+        </div>
+        
+
+      </ul>
+
+  </section>
+
+
+
+  <section id="meal-package">
+    <div class="meal_pac_container">
+      <h1>Meal Package Service</h1>
+      
+      <!-- Meal plans are displayed in grid -->
+      <div class="meal-plans">
+        
+        <!-- Group A on the left -->
+        <div class="meal-group">
+          <h2 class="g_h2">Group A Menu (Fri-Sun)</h2>
+          <div class="meal-day" id="friday-menu"></div>
+          <div class="meal-day" id="saturday-menu"></div>
+          <div class="meal-day" id="sunday-menu"></div>
+        </div>
+
+        <!-- Group B on the right -->
+        <div class="meal-group">
+          <h2 class="g_h2">Group B Menu (Mon-Thu)</h2>
+          <div class="meal-day" id="monday-menu"></div>
+          <div class="meal-day" id="tuesday-menu"></div>
+          <div class="meal-day" id="wednesday-menu"></div>
+          <div class="meal-day" id="thursday-menu"></div>
+        </div>
+        
+      </div>
+
+      <div class="selection-box">
+        <h2>Select Your Plan</h2>
+
+        <div class="meal_checkbox">
+          <h3>Choose Groups:</h3>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="group-a-checkbox">
+              Group A
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="group-b-checkbox">
+              Group B
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <h3>Choose Duration:</h3>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="weeks" value="1" checked> 1 Week
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="weeks" value="2"> 2 Weeks
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="weeks" value="3"> 3 Weeks
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <h3>Your Selection:</h3>
+          <p id="selected-groups">Groups: None</p>
+          <p id="selected-weeks">Duration: 1 week</p>
+          <p id="total-price" class="font-bold">Total Price: $0</p>
+        </div>
+
+        <button class="btn" id="add-to-cart" disabled>Add to Cart</button>
+      </div>
+
+      <!-- Profile section to show after adding to cart -->
+      <div class="profile-section" id="profile-section">
+        <h2>User Profile</h2>
+        <p id="profile-info">Meal Plan: None</p>
+      </div>
+    </div>
+
+    <!-- Modal for confirmation -->
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <h2>Success!</h2>
+        <p>Your meal plan has been added to the cart.</p>
+        <button id="close-modal-btn" class="btn">OK</button>
+      </div>
+    </div>
+
+  </section>
+
+
+
+<hr>
+  
+
+
+  <footer id="footer" class="section-p1">
+    <div class="col">
+      <img class="logo" src="assets/image/logo/Bachelor-Bhai-Transparent-Logo-10(500x500px).png" alt="">
+      <h4>Contact</h4>
+      <p>
+        <strong>Address: </strong> 100 feet Madani Avenue, Dhaka
+      </p>
+      <p>
+        <strong>Phone: </strong> +880 17000000
+      </p>
+      <p>
+        <strong>Hours: </strong> 24/7
+      </p>
+
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="copyright">
+      <p>© 2024, Bachelor BHAI Ltd. &nbsp; Terms |&nbsp; Privacy |&nbsp; Guidelines </p>
+    </div>
+  </footer>
+
+
+  <script>
+            const groupAMenu = {
+          "Friday": {
+            "Breakfast": { name: "Vegetable Omelette", description: "With whole grain toast" },
+            "Lunch": { name: "Grilled Chicken Salad", description: "With mixed greens and vinaigrette" },
+            "Dinner": { name: "Baked Salmon", description: "With roasted vegetables" }
+          },
+          "Saturday": {
+            "Breakfast": { name: "Whole Grain Pancakes", description: "With fresh berries" },
+            "Lunch": { name: "Vegetarian Wrap", description: "With hummus and fresh veggies" },
+            "Dinner": { name: "Lean Beef Stir Fry", description: "With brown rice" }
+          },
+          "Sunday": {
+            "Breakfast": { name: "Greek Yogurt Parfait", description: "With granola and honey" },
+            "Lunch": { name: "Quinoa Bowl", description: "With grilled tofu and mixed vegetables" },
+            "Dinner": { name: "Grilled Fish Tacos", description: "With cabbage slaw and avocado" }
+          }
+        }
+
+        const groupBMenu = {
+          "Monday": {
+            "Breakfast": { name: "Avocado Toast", description: "With poached eggs" },
+            "Lunch": { name: "Turkey and Avocado Sandwich", description: "On whole grain bread" },
+            "Dinner": { name: "Grilled Chicken Breast", description: "With quinoa and steamed broccoli" }
+          },
+          "Tuesday": {
+            "Breakfast": { name: "Smoothie Bowl", description: "With mixed fruits and chia seeds" },
+            "Lunch": { name: "Lentil Soup", description: "With whole grain crackers" },
+            "Dinner": { name: "Baked Cod", description: "With sweet potato mash and green beans" }
+          },
+          "Wednesday": {
+            "Breakfast": { name: "Overnight Oats", description: "With almond milk and fresh berries" },
+            "Lunch": { name: "Chicken Caesar Salad", description: "With homemade dressing" },
+            "Dinner": { name: "Vegetarian Chili", description: "With cornbread" }
+          },
+          "Thursday": {
+            "Breakfast": { name: "Breakfast Burrito", description: "With scrambled eggs and black beans" },
+            "Lunch": { name: "Tuna Salad", description: "On a bed of mixed greens" },
+            "Dinner": { name: "Grilled Tofu Steak", description: "With roasted potatoes and asparagus" }
+          }
+        }
+
+        const groupACheckbox = document.getElementById('group-a-checkbox');
+        const groupBCheckbox = document.getElementById('group-b-checkbox');
+        const weekRadios = document.querySelectorAll('input[name="weeks"]');
+        const selectedGroupsElement = document.getElementById('selected-groups');
+        const selectedWeeksElement = document.getElementById('selected-weeks');
+        const totalPriceElement = document.getElementById('total-price');
+        const addToCartButton = document.getElementById('add-to-cart');
+        const profileSection = document.getElementById('profile-section');
+        const profileInfo = document.getElementById('profile-info');
+        const modal = document.getElementById('confirmation-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        let selectedGroups = [];
+        let weeks = 1;
+
+        function renderMenu(menu, day, containerId) {
+          const container = document.getElementById(containerId);
+          container.innerHTML = '';
+
+          const card = document.createElement('div');
+          card.classList.add('card');
+
+          let cardContent = `<h4>${day}</h4>`;
+          const meals = menu[day];
+
+          Object.keys(meals).forEach(mealType => {
+            const meal = meals[mealType];
+            cardContent += `
+              <p><strong>${mealType}</strong>: ${meal.name}</p>
+              <p>${meal.description}</p>
+            `;
+          });
+
+          card.innerHTML = cardContent;
+          container.appendChild(card);
+        }
+
+        function updateSelection() {
+          selectedGroups = [];
+          if (groupACheckbox.checked) selectedGroups.push('A');
+          if (groupBCheckbox.checked) selectedGroups.push('B');
+
+          weeks = parseInt(document.querySelector('input[name="weeks"]:checked').value);
+
+          selectedGroupsElement.textContent = `Groups: ${selectedGroups.length > 0 ? selectedGroups.join(', ') : 'None'}`;
+          selectedWeeksElement.textContent = `Duration: ${weeks} week(s)`;
+          totalPriceElement.textContent = `Total Price: $${selectedGroups.length * weeks * 50}`;
+
+          addToCartButton.disabled = selectedGroups.length === 0;
+        }
+
+        function openModal() {
+          modal.style.display = 'block';
+        }
+
+        function closeModal() {
+          modal.style.display = 'none';
+          profileSection.style.display = 'block';
+          profileInfo.textContent = `Meal Plan: ${selectedGroups.join(', ')}, Duration: ${weeks} week(s)`;
+        }
+
+        // Event listeners
+        groupACheckbox.addEventListener('change', updateSelection);
+        groupBCheckbox.addEventListener('change', updateSelection);
+        weekRadios.forEach(radio => radio.addEventListener('change', updateSelection));
+
+        addToCartButton.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Initial render
+        renderMenu(groupAMenu, "Friday", "friday-menu");
+        renderMenu(groupAMenu, "Saturday", "saturday-menu");
+        renderMenu(groupAMenu, "Sunday", "sunday-menu");
+        renderMenu(groupBMenu, "Monday", "monday-menu");
+        renderMenu(groupBMenu, "Tuesday", "tuesday-menu");
+        renderMenu(groupBMenu, "Wednesday", "wednesday-menu");
+        renderMenu(groupBMenu, "Thursday", "thursday-menu");
+        updateSelection();
+  </script>
+
+</body>
+</html>

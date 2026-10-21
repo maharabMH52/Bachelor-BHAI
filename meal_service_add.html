@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+
+  <!---favicon-------------------->
+
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!----custom css link--->
+
+
+  <link rel="stylesheet" href="./assets/css/property_style.css" >
+
+
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+<!-- Header part work--------------------------->
+
+<section id="header">
+
+  <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="REBYELL LOGO"> </a>
+
+  <div>
+    <ul id="navbar">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="feature.html">Feature</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a hhref="about_us.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li>
+        <div class="search-box">
+          <input type="text" class="search-txt" placeholder="Search">
+          <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+        </div>
+    
+        
+      </li>
+      <li>
+        <a id="lg-bag" href="cart.html"><i class="fa-regular fa-heart"></i></a>
+      </li>
+      <!--close icon-->
+      <li><a href="#" onclick="window.location.href='login.html';">Login</a></li>
+      <li><a href="#" onclick="window.location.href='signup.html';">Sign Up</a></li>
+      
+      <li>
+        <a  onclick="toggleMenu()"><i class="fa-regular fa-user"></i></i></a>
+      </li>
+      
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+        </div>
+      </div>
+      
+
+    </ul>
+
+</section>
+
+
+
+
+
+<!---Single  Apartment Add property  details===============------>
+
+
+
+
+<form action="addProperty.php" method="POST" enctype="multipart/form-data">
+  <section id="cart" class="section-p1">
+      <table width="100%">
+          <div class="cart-header">
+              <i class="fa fa-image"></i>
+              <h4 class="h4">Upload Photo</h4>
+          </div>
+          <hr>
+
+          <div class="upload-image-container">
+              <div class="upload-photo-box">
+                  <label for="upload-photo">
+                      <i class="fa fa-cloud-upload"></i>
+                      <p>Drag & Drop photo here or click to upload</p>
+                  </label>
+                  <input type="file" name="upload-photo[]" id="upload-photo" multiple accept="image/*">
+              </div>
+          </div>
+
+          <!-- Image Preview Table Section -->
+          <div class="image-preview-section">
+              <table id="image-preview-table" class="image-table">
+                  <thead>
+                      <tr>
+                          <th>Image</th>
+                          <th>File Name</th>
+                          <th>File Size</th>
+                      </tr>
+                  </thead>
+                  <tbody id="image-preview-body">
+                      <!-- Image rows will be inserted here -->
+                  </tbody>
+              </table>
+          </div>
+
+
+
+      </table>
+  </section>
+
+
+  <!-- Location Information----------------------------- -->
+  <section id="cart" class="section-p1">
+      <table width="100%">
+          <div class="cart-header">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4 class="h4">Location Information</h4>
+          </div>
+          <thead>
+              <tr>
+                  <td>DIVISION</td>
+                  <td>DISTRICT</td>
+                  <td>AREA / THANA</td>
+                  <td>SUB AREA</td>
+                  <td>SECTOR NO</td>
+                  <td>ROAD NO</td>
+                  <td>Delivery Time</td>
+              </tr>
+          </thead>
+          <tbody id="cart-items-container">
+              <!-- Dynamically added product items will go here -->
+              <tr>
+                  <td class="table_info">
+                      <select name="division" id="division">
+                          <option value="">Select Division</option>
+                          <option value="Dhaka">Dhaka</option>
+                          <option value="Cumilla">Cumilla</option>
+                      </select>
+                  </td>
+                  <td class="table_info">
+                      <select name="district" id="district">
+                          <option value="">Select District</option>
+                          <option value="Dhaka">Dhaka</option>
+                          <option value="Narayanganj">Narayanganj</option>
+                          <option value="Gazipur">Gazipur</option>
+
+                      </select>
+                  </td>
+                  <td class="table_info">
+                      <select name="area" id="area">
+                          <option value="">Select Area/Thana</option>
+                          <option value="Badda">Badda</option>
+                          <option value="Banani">Banani</option>
+                          <option value="Vatara">Vatara</option>
+                      </select>
+                  </td>
+                  <td class="table_info">
+                      <select name="subarea" id="subarea">
+                          <option value="">Select Sub-area</option>
+                          <option value="100 Feet Road">100 Feet Road</option>
+                          <option value="Bashundhara R/A">Bashundhara R/A</option>
+                          <option value="Natun Bazar">Natun Bazar</option>
+                          <option value="Nurer Chala">Nurer Chala</option>
+                          <option value="Sayeed Nagar">Sayeed Nagar</option>
+                      </select>
+                  </td>
+                  <td><input type="text" name="sector_no" id="sector_no" placeholder="Enter Sector No"></td>
+                  <td><input type="text" name="road_no" id="road_no " placeholder="Enter Road No"></td>
+                  <td>
+                    <input type="time" name="delivery_time" id="delivery_time" placeholder="Select Delivery Time">
+                </td>
+              </tr>
+          </tbody>
+
+
+              <!-- Add more rows for other items -->
+          <!-- </tbody>
+          <tfoot>
+              <tr>
+                  <td><textarea name="location_details" id="location_details" class="short_d" placeholder="Short address / house name" rows="4" cols="80"></textarea></td>
+              </tr>
+          </tfoot> -->
+
+
+      </table>
+  </section>
+
+
+
+
+
+  <!-- Basic Information----------------------------- -->
+  <section id="cart" class="section-p1">
+      <table width="100%">
+          <div class="cart-header">
+              <i class="fa-solid fa-file-contract"></i>
+              <h4 class="h4">Basic Meal Information</h4>
+          </div>
+          <thead>
+              <tr>
+                  <td>Meal Name</td>
+                  <td>Ingredients</td>
+                  <td>Meal Type</td>
+                  <td>Serving Size</td>
+                  
+              </tr>
+          </thead>
+          <tbody id="cart-items-container">
+              <!-- Dynamically added product items will go here -->
+              <tr>
+                <td><input type="text" name="meal_name" id="meal_name" placeholder="Enter Meal Name"></td>
+                <td><input type="text" name="ingredients" id="ingredients" placeholder="Enter Ingredients"></td>
+                <td class="table_info">
+                    <select name="meal_type" id="meal_type">
+                        <option value="">Select Meal Type</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non-Vegetarian">Non-Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                    </select>
+                </td>
+                <td><input type="text" name="serving_size" id="serving_size" placeholder="Enter Serving Size"></td>
+            </tr>
+          </tbody>
+
+          
+          
+
+
+        
+          <!-- Add more rows for other items -->
+      </table>
+  </section>
+
+<!-- contuct Information------------------------------------------------ -->
+
+  <!-- Basic Information----------------------------- -->
+  <section id="cart" class="section-p1">
+    <table width="100%">
+        <div class="cart-header">
+            <i class="fa-solid fa-phone"></i>
+            <h4 class="h4">Contuct Information</h4>
+        </div>
+        <thead>
+            <tr>
+                <td>Phone Number 1</td>
+                <td>Phone Number 2</td>
+            </tr>
+        </thead>
+        <tbody id="cart-items-container">
+            <!-- Dynamically added product items will go here -->
+            <tr>
+                <td><input type="text" name="color" id="color" placeholder="Enter Phone Number"></td>
+                <td><input type="text" name="color" id="color" placeholder="Enter Phone Number"></td>
+                
+            </tr>
+        </tbody>
+
+        
+        
+
+
+      
+        <!-- Add more rows for other items -->
+    </table>
+</section>
+
+
+  <!--Uploading Details section--------------------- -->
+
+  <section id="cart" class="section-p1">
+      <table width="100%">
+          <div class="cart-header">
+              <i class="fa fa-info-circle"></i>
+              <h4 class="h4">Details</h4>
+          </div>
+          <hr>
+
+          <div class="details-section">
+
+              <span>Contact details and website link not allowed in this section</span>
+
+              <div class="editor-toolbar">
+                  <button type="button" title="Undo"><i class="fa fa-undo"></i></button>
+                  <button type="button" title="Bold"><i class="fa fa-bold"></i></button>
+                  <button type="button" title="Italic"><i class="fa fa-italic"></i></button>
+                  <button type="button" title="Underline"><i class="fa fa-underline"></i></button>
+              </div>
+              <textarea id="property_details" name="property_details" rows="5" placeholder="Write something about your property!"></textarea>
+          </div>
+      </table>
+  </section>
+
+
+  <section id="cart" class="section-p1">
+      <table width="100%">
+          <div class="cart-header">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4 class="h4">Mark in Maps (Optional)</h4>
+          </div>
+          <hr>
+
+          <div class="mark-maps-section">
+
+              <span>Please click on the map to mark your exact location</span>
+
+              <!-- This div will hold the map -->
+              <div id="map"></div>
+
+              <!-- Hidden inputs to store latitude and longitude -->
+              <input type="hidden" id="latitude" name="latitude" />
+              <input type="hidden" id="longitude" name="longitude" />
+          </div>
+          <button type="submit" class="submit-property-btn">Confirm Location</button>
+
+      </table>
+  </section>
+
+  <!-- Price Giving-------- -->
+
+  <section id="cart" class="section-p1">
+      <table width="100%">
+          <div class="cart-header">
+              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+              <h4 class="h4">Price</h4>
+          </div>
+
+
+          <thead>
+              <tr>
+                  <td>PRICE</td>
+              </tr>
+          </thead>
+
+          <tbody id="cart-items-container"></tbody>
+          <!-- Dynamically added product items will go here -->
+          <tr>
+              <td><input type="text" name="price" id="price" placeholder="Price"></td>
+              <!-- <td class="table_info">
+                  <select name="price_basis" id="price_basis">
+                      <option value="daily">Daily</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="yearly">Yearly</option>
+
+                  </select>
+              </td> -->
+
+          </tr>
+
+
+          <!-- Add more rows for other items -->
+          </tbody>
+
+      </table>
+  </section>
+
+
+  <!-- Save Property button---------- -->
+
+  <section id="save-property-section" class="section-p1">
+      <div class="save-property-container">
+          <button name="save-property" id="save-property" type="submit" class="save-property-btn">
+              <i class="fa-solid fa-save"></i> Save Meal
+          </button>
+      </div>
+  </section>
+
+
+
+
+<!-- Uploaded Image preview  table section -------------------------------------------->
+
+<script>
+  document.getElementById('upload-photo').addEventListener('change', function(event) {
+      const files = event.target.files; // Get all selected files
+      const tableBody = document.getElementById('image-preview-body');
+
+      // Loop through each selected file
+      Array.from(files).forEach(file => {
+          if (file) {
+              const reader = new FileReader();
+              reader.onload = function(e) {
+                  // Create a new table row for the image
+                  const newRow = document.createElement('tr');
+
+                  // Create image cell
+                  const imageCell = document.createElement('td');
+                  const img = document.createElement('img');
+                  img.src = e.target.result;
+                  img.alt = file.name;
+                  img.style.width = '100px'; // Set image width
+                  imageCell.appendChild(img);
+
+                  // Create file name cell
+                  const nameCell = document.createElement('td');
+                  nameCell.textContent = file.name;
+
+                  // Create file size cell
+                  const sizeCell = document.createElement('td');
+                  sizeCell.textContent = (file.size / 1024).toFixed(2) + ' KB';
+
+                  // Append cells to the row
+                  newRow.appendChild(imageCell);
+                  newRow.appendChild(nameCell);
+                  newRow.appendChild(sizeCell);
+
+                  // Append the row to the table body
+                  tableBody.appendChild(newRow);
+              };
+              reader.readAsDataURL(file); // Convert the file to a data URL for preview
+          }
+      });
+  });
+</script>
+
+
+
+
+
+
+
+<!-- Google  Maps API--------------------------------------------------------------- -->
+
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  // Initialize the map centered on Bangladesh (23.6850, 90.3563) with zoom level 7
+  var map = L.map('map').setView([23.6850, 90.3563], 7); // Coordinates for Bangladesh
+
+  // Add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19
+  }).addTo(map);
+
+  // Initialize marker variable
+  var marker;
+
+  // Add a click event to place a marker
+  map.on('click', function(e) {
+      if (marker) {
+          // Move the existing marker to the clicked location
+          marker.setLatLng(e.latlng);
+      } else {
+          // Create a new marker at the clicked location
+          marker = L.marker(e.latlng).addTo(map);
+      }
+
+      // Center the map to the marker
+      map.setView(e.latlng);
+
+      // Store latitude and longitude in hidden input fields
+      document.getElementById('latitude').value = e.latlng.lat;
+      document.getElementById('longitude').value = e.latlng.lng;
+
+      console.log("Selected location:", e.latlng.lat, e.latlng.lng); // For debugging
+  });
+
+  // Function to handle the form submission via AJAX
+  $(document).ready(function() {
+      $('.submit-property-btn').on('click', function(e) {
+          e.preventDefault(); // Prevent the default form submission behavior
+
+          // Get the latitude and longitude from the hidden input fields
+          var latitude = document.getElementById('latitude').value;
+          var longitude = document.getElementById('longitude').value;
+
+          // Ensure latitude and longitude are not empty
+          if (latitude === '' || longitude === '') {
+              alert('Please mark a location on the map before confirming.');
+              return;
+          }
+
+          // Send the data to the server via AJAX
+          $.ajax({
+              url: 'saveLocation.php', // Create this PHP file to handle saving location
+              type: 'POST',
+              data: {
+                  latitude: latitude,
+                  longitude: longitude
+              },
+              success: function(response) {
+                  // Handle success response
+                  alert('Location saved successfully!');
+                  console.log(response); // Log the response for debugging
+              },
+              error: function(xhr, status, error) {
+                  // Handle error response
+                  console.log('Error:', error);
+              }
+          });
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 

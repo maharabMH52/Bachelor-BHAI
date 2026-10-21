@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Bachelor Bhai</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/admin_panel.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <!-- <h3>Bachelor Bhai Admin</h3> -->
+        <img class="admin-logo" src="assets/image/logo/Bachelor-Bhai-Transparent-Logo-06(small).png" alt="Admin Logo">
+      </div>
+      <ul class="sidebar-list">
+        <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+        <li><a href="#" onclick="showSection('house-rental')"><i class="fa-solid fa-building"></i> House Rental</a></li>
+        <li><a href="#" onclick="showSection('home-appliance')"><i class="fa-solid fa-tools"></i> Home Appliances</a></li>
+        <li><a href="#" onclick="showSection('home-shifting')"><i class="fa-solid fa-truck"></i> Home Shifting</a></li>
+        <li><a href="#" onclick="showSection('meal-service')"><i class="fa-solid fa-utensils"></i> Meal Service</a></li>
+        <li><a href="#" onclick="showSection('roommate-seeking')"><i class="fa-solid fa-users"></i> Roommate Seeking</a></li>
+        <li><a href="#"><i class="fa-solid fa-cogs"></i> Settings</a></li>
+        <li><a href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+      <header class="admin-header">
+        <h2>Admin Panel Dashboard</h2>
+        <div class="header-right">
+          <input type="text" placeholder="Search...">
+          <a href="#" class="admin-btn"><i class="fa-solid fa-user"></i> Admin</a>
+        </div>
+      </header>
+
+      <div class="admin-content">
+        <!-- Dashboard Overview -->
+        <div class="overview-boxes">
+          <div class="box">
+            <i class="fa-solid fa-users"></i>
+            <h3>Total Users</h3>
+            <p id="total-users">1,245</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-house"></i>
+            <h3>Active House Rentals</h3>
+            <p id="active-houses">120</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-tools"></i>
+            <h3>Active Home Appliances</h3>
+            <p id="active-home-appliances">50</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Active Home Shifting</h3>
+            <p id="active-home-shifting">30</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Active Meal Services</h3>
+            <p id="active-meals">80</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-users"></i>
+            <h3>Active Roommate Seeking</h3>
+            <p id="active-roommates">60</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <h3>Total Earnings</h3>
+            <p id="total-earnings">$45,000</p>
+          </div>
+        </div>
+
+        <!-- Features Details Section -->
+        <div class="features-section">
+          <!-- House Rental Feature -->
+          <section id="house-rental" class="feature-section">
+            <h3>House Rental Details</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>House ID</th>
+                        <th>User</th>
+                        <th>Location</th>
+                        <th>Rent</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="house-rental-data">
+                    <!-- Example row -->
+                    <tr class="house-row" onclick="toggleDetails('house-252')">
+                        <td>252</td>
+                        <td>John Doe</td>
+                        <td>Dhaka, Sayed Nagar</td>
+                        <td>11,000 BDT</td>
+                        <td>Available</td>
+                        <td><button class="btn" onclick="editHouse(252)">Edit</button></td>
+                    </tr>
+                    <tr class="house-details" id="house-252">
+                        <td colspan="6">
+                            <!-- Sub-topics inside this expandable section -->
+                            <div class="details-section">
+                                <!-- Basic Information -->
+                                <h4>Basic Information</h4>
+                                <p><strong>Bedrooms:</strong> 3</p>
+                                <p><strong>Bathrooms:</strong> 2</p>
+                                <p><strong>Floor:</strong> 3rd Floor</p>
+                                <p><strong>Area:</strong> 1200 sq ft</p>
+                                <hr>
+        
+                                <!-- Location Information -->
+                                <h4>Location Information</h4>
+                                <p><strong>Division:</strong> Dhaka</p>
+                                <p><strong>District:</strong> Dhaka</p>
+                                <p><strong>Area / Thana:</strong> Vatara</p>
+                                <p><strong>Sub Area:</strong> Sayed Nagar</p>
+                                <p><strong>Short Address:</strong> Block A, Boro Moshjid Road</p>
+                                <p><strong>Holding Number:</strong> 10/b</p>
+                                <hr>
+        
+                                <!-- Price Information -->
+                                <h4>Price</h4>
+                                <p><strong>Price:</strong> 11,000 BDT</p>
+                                <p><strong>Payment Frequency:</strong> Monthly</p>
+                                <hr>
+        
+                                <!-- Summary -->
+                                <h4>Summary</h4>
+                                <p># To-Let ‼️</p>
+                                <p>Upcoming rental available from November 1, 2024. Spacious 3-bedroom apartment with 2 bathrooms, 1 dining room, a balcony, and more.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Repeat this block for each house -->
+                </tbody>
+            </table>
+
+            
+        </section>
+        
+
+          <!-- Home Appliances Feature -->
+          <section id="home-appliance" class="feature-section" style="display: none;">
+            <h3>Home Appliance Details</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Appliance ID</th>
+                  <th>User</th>
+                  <th>Appliance Type</th>
+                  <th>Condition</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="home-appliance-data">
+                <!-- Data fetched dynamically -->
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Home Shifting Feature -->
+          <section id="home-shifting" class="feature-section" style="display: none;">
+            <h3>Home Shifting Details</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Shift ID</th>
+                  <th>User</th>
+                  <th>From Location</th>
+                  <th>To Location</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="home-shifting-data">
+                <!-- Data fetched dynamically -->
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Meal Service Feature -->
+          <section id="meal-service" class="feature-section" style="display: none;">
+            <h3>Meal Service Details</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Service ID</th>
+                  <th>User</th>
+                  <th>Type</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="meal-service-data">
+                <!-- Data fetched dynamically -->
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Roommate Seeking Feature -->
+          <section id="roommate-seeking" class="feature-section" style="display: none;">
+            <h3>Roommate Seeking</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Post ID</th>
+                  <th>User</th>
+                  <th>Location</th>
+                  <th>Rent Range</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="roommate-seeking-data">
+                <!-- Data fetched dynamically -->
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/admin_script.js"></script>
+</body>
+
+</html>

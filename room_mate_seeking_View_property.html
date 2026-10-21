@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+  <!---favicon-------------------->
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!----custom css link--->
+
+  <link rel="stylesheet" href="./assets/css/style-prefix.css" >
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!-- Header part work--------------------------->
+
+  <section id="header">
+
+    <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="REBYELL LOGO"> </a>
+
+    <div>
+      <ul id="navbar">
+        
+        <li><a  href="index.html">Home</a></li>
+        <li><a class="active" href="#">Feature</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+        <li>
+          <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search">
+            <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+          </div>
+      
+          
+        </li>
+        <li>
+          <a id="lg-bag" href="cart.html"><i class="fa-regular fa-heart"></i></a>
+        </li>
+        <!--close icon-->
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+        
+        <li>
+          <a  onclick="toggleMenu()"><i class="fa-regular fa-user"></i></i></a>
+        </li>
+        
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+          </div>
+        </div>
+        
+
+      </ul>
+
+  </section>
+
+
+
+<!---Single  Apartment Rent flat details===============------>
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-house"></i>
+      <h4 class="h4">03 Bed Room Flat</h4>
+    </div>
+  </table>
+</section>
+
+<section id="prodetails" class="section-p1">
+    <h4 class="h4">Apartment Image</h4>
+
+    <div class="small-img-group">
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+
+
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+
+
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+
+
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+    </div>
+  
+  
+</section>
+
+
+<!-- Basic Information----------------------------- -->
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-file-contract"></i>
+      <h4 class="h4">Basic Information</h4>
+    </div>
+      <hr>
+      <div class="details-row">
+        <i class="fa-solid fa-bed"></i>
+        <p>03 Bedroom </p>
+        
+        <i class="fa-solid fa-shower"></i>
+        <p>02 Shower</p>
+
+        <i class="fa-solid fa-stairs"></i>
+        <p>3rd  Floor</p>
+
+        
+        <i class="fa-solid fa-chart-area"></i>
+        <p>1200 sq ft</p>
+      </div>
+    <thead>
+      <tr>
+        <td>PROPERTY ID</td>
+        <!-- <td>PROPERTY PHOTO</td> -->
+        <td>UPDATED AT</td>
+        <td>ABAILBEL FROM</td>
+        <td>CATEGORY</td>
+        <td>PROPERTY TYPE</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td class="table_info">
+          <p>252</p>
+        </td>
+        <!-- <td class="table_info">
+          <input type="file" name="property-photo" accept="image/*" required>
+        </td> -->
+        <td class="table_info">
+          <p>27 Sep 2024</p>
+        </td>
+        <td class="table_info">
+          <p>01 Nov 2024</p>
+        </td>
+        <td class="table_info">
+          <p>Bachelor</p>
+        </td>
+        <td class="table_info">
+          <p>Seat</p>
+        </td>
+      </tr>
+      <!-- Add more rows for other items -->
+    </tbody>
+   
+    </tbody>
+  </table>
+</section>
+
+<!-- Seeker Details ------------------ -->
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-file-contract"></i>
+      <h4 class="h4">Seeker Information</h4>
+    
+    <thead>
+      <tr>
+        <td>Seekr name</td>
+        <td>Occupation</td>
+        <td>Institute name</td>
+        <td>Habits</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td class="table_info">
+          <p>Maharab Hossain</p>
+        </td>
+        <!-- <td class="table_info">
+          <input type="file" name="property-photo" accept="image/*" required>
+        </td> -->
+        <td class="table_info">
+          <p>Student</p>
+        </td>
+        <td class="table_info">
+          <p>United International  University</p>
+
+        </td>
+        <td class="table_info">
+          <p>Non Smoker</p>
+        </td>
+      </tr>
+      <!-- Add more rows for other items -->
+    </tbody>
+   
+    </tbody>
+  </table>
+</section>
+
+<!-- location section============================-->
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4 class="h4">Location Information</h4>
+    </div>
+    <thead>
+      <tr>
+        <td>DIVISION</td>
+        <td>DISTRICT</td>
+        <td>AREA / THANA</td>
+        <td>SUB AREA</td>
+        <td>SHORT ADDRESS</td>
+        <td>HOLDING NO</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td><p>Dhaka</p></td>
+        <td><p>Dhaka</p></td>
+        <td><p>Vatara</p></td>
+        <td><p>Sayed Nagar</p></td>
+        <td><p>Block A, Boro Moshjid Road</p></td>
+        <td><p>10/b</p></td>
+        
+      </tr>
+      
+      <!-- Add more rows for other items -->
+    </tbody>
+   
+    </tbody>
+  </table>
+</section>
+
+
+<!-- Please login for the locked information----------- -->
+
+
+<section id="cradit" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-unlock-keyhole"></i>
+      <h4 class="h4">Please Login for the locked information</h4>
+    </div>
+    <hr class="hr">
+
+    <div class="login_Rig-content">
+      <div class="info-container">
+        <div class="info_h">
+          <p class="c_details">We don't share specific address and publisher / owner contact information without Registered user. Please Login / Register to get the full details<br> of this property.</p>
+          <p class="info_condition">( Terms & conditions apply )</p>
+        </div>
+        <!-- Button Section: Purchase Credits, Login, Registration -->
+        <div class="button-container">
+          <button class="credit_btn" onclick="window.location.href='login.html'">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </button>
+          <button class="credit_btn" onclick="window.location.href='signup.html'">
+            <i class="fa-solid fa-user-plus"></i> Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </table>
+</section>
+
+
+
+
+
+<!-- Summary section============================-->
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-regular fa-file-lines"></i>
+      <h4 class="h4">Summary</h4>
+    </div>
+    <hr>
+
+    <p class="p_details"># To-Let ‼️</p>
+    <p class="p_details"> আগামী পহেলা নভেম্বর -২০২৪ হতে ২য় তলায় টাইলসকৃত সম্পূর্ণ নতুন ফ্লাট বাসা ভাড়া হবে! (শুধুমাত্র ফ্যমিলি বাসা ভাড়া হবে) যা থাকছে-</p>
+    <p class="p_details">✅ ২টি বড় বেড রুম</p>
+    <p class="p_details">✅ ১ টি ডাইনিং রুম।</p>
+    <p class="p_details">✅ ২টি বাথরুম </p>
+    <p class="p_details">✅ ১টি বারান্দা</p>
+    <p class="p_details">✅ লাইনের গ্যাস।</p>
+    <p class="p_details">✅ ২৪ ঘন্টা পানি</p>
+    <p class="p_details">✅ একদম নিরিবিলি পরিবেশ,কোনো ঝামেলা  নেই।</p>
+    <p class="p_details">✅ বাসার ছাদ ব্যবহারের সুবিধা।</p>
+    <p class="p_details">বিঃদ্রঃ অবশ্যই পরিস্কার-পরিচ্ছন্ন হতে হবে।বাসা ভাড়া: ১০,০০০ টাকা ( সকল বিল ছাড়া)</p>
+  
+  </table>
+</section>
+
+
+
+
+
+
+
+<!-- price setion --------------- -->
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+      <h4 class="h4">Price</h4>
+    </div>
+    <hr>
+
+    <div class="cart-header"></div>
+      <h4 class="h5">3000 BDT</h4>
+      <p class="p_details">Monthly</p>
+    </div>
+
+    
+  
+  </table>
+</section>
+
+
+
+
+
+
+
+
+
+
+<hr>
+  
+
+
+  <footer id="footer" class="section-p1">
+    <div class="col">
+      <img class="logo" src="assets/image/logo/Bachelor-Bhai-Transparent-Logo-10(500x500px).png" alt="">
+      <h4>Contact</h4>
+      <p>
+        <strong>Address: </strong> 100 feet Madani Avenue, Dhaka
+      </p>
+      <p>
+        <strong>Phone: </strong> +880 17000000
+      </p>
+      <p>
+        <strong>Hours: </strong> 24/7
+      </p>
+
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="copyright">
+      <p>© 2024, Bachelor BHAI Ltd. &nbsp; Terms |&nbsp; Privacy |&nbsp; Guidelines </p>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/script.js">
+
+  </script>
+
+</body>
+</html>

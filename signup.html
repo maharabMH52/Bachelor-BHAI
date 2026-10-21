@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+  <!---favicon-------------------->
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!----custom css link--->
+
+  <link rel="stylesheet" href="./assets/css/css.css" >
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+  <!-- Header part work--------------------------->
+
+  <section id="header">
+
+    <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="REBYELL LOGO"> </a>
+
+    <div>
+      <ul id="navbar">
+        
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="feature.html">Feature</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         -->
+        <!--close icon-->
+        <li><a href="login.html">Login</a></li>
+        <li><a class="active" href="signup.html">Sign Up</a></li>
+        
+        <li>
+          <a  onclick="toggleMenu()"><i class="fa-regular fa-user"></i></i></a>
+        </li>
+        
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+          </div>
+        </div>
+        
+
+      </ul>
+    </div>
+
+  </section>
+<hr>
+
+<section id="signup_section">
+  <h3 class="signup_heading">Sign Up</h3>
+  <p>Please enter your details to create a new account.</p>
+
+  <div class="signup_form">
+    <input type="text" class="signup_input" placeholder="Name">
+    <input type="email" class="signup_input" placeholder="Email">
+    <input type="text" class="signup_input" placeholder="Phone Number">
+    <input type="password" class="signup_input" placeholder="Password">
+    
+    <!-- <input type="file" class="signup_input" placeholder="Nid number" name="nid_card" accept="image/*" required /> -->
+    <div class="custom_file_input">
+      <label for="nid_card" class="custom_label">NID Card Photo</label>
+      <input type="file" id="nid_card" name="nid_card" accept="image/*" required>
+    </div>
+
+    <div class="terms_container">
+      <input type="checkbox" id="terms_checkbox">
+      <label for="terms_checkbox">I have read and agree to the Terms of Service</label>
+    </div>
+
+    <button class="signup_btn">Sign Up</button>
+    <p>Already have an account? <a href="#" onclick="window.location.href='login.html';">Login</a></p>
+  </div>
+</section>
+
+
+
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

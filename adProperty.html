@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+
+  <!---favicon-------------------->
+
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!----custom css link--->
+
+
+  <link rel="stylesheet" href="./assets/css/property_style.css" >
+
+
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+<!-- Header part work--------------------------->
+
+<section id="header">
+
+  <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="REBYELL LOGO"> </a>
+
+  <div>
+    <ul id="navbar">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="feature.html">Feature</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about_us.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li>
+        <div class="search-box">
+          <input type="text" class="search-txt" placeholder="Search">
+          <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+        </div>
+    
+        
+      </li>
+      <li>
+        <a id="lg-bag" href="cart.html"><i class="fa-regular fa-heart"></i></a>
+      </li>
+      <!--close icon-->
+      <li><a href="#" onclick="window.location.href='login.html';">Login</a></li>
+      <li><a href="#" onclick="window.location.href='signup.html';">Sign Up</a></li>
+      
+      <li>
+        <a  onclick="toggleMenu()"><i class="fa-regular fa-user"></i></i></a>
+      </li>
+      
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+        </div>
+      </div>
+      
+
+    </ul>
+
+</section>
+
+
+
+
+
+<!---Single  Apartment Add property  details===============------>
+
+
+
+
+<!-- Location Information----------------------------- -->
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4 class="h4">Location Information</h4>
+    </div> 
+    <thead>
+      <tr>
+        <td>DIVISION</td>
+        <td>DISTRICT</td>
+        <td>AREA / THANA</td>
+        <td>SUB AREA</td>
+        <td>SECTOR NO</td>
+        <td>ROAD NO</td>
+        <td>HOUSE NO</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Category</option>
+            <option value="residential">Dhaka</option>
+            <option value="commercial">Cumilla</option>
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Category</option>
+            <option value="residential">Dhaka</option>
+            <option value="residential">Narayanganj</option>
+            <option value="residential">Gazipur</option>
+            
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Category</option>
+            <option value="residential">Badda</option>
+            <option value="commercial">Banani</option>
+            <option value="residential">Vatara</option>
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Category</option>
+            <option value="residential">100 Feet Road</option>
+            <option value="commercial">Bashundhara R.A</option>
+            <option value="residential">Natun Bazar</option>
+            <option value="residential">Nurer Chala</option>
+            <option value="residential">Sayeed Nagar</option>
+          </select>
+        </td>
+        <td><input type="text" name="sector_no" placeholder="Enter Sector No"></td>
+        <td><input type="text" name="road_no" placeholder="Enter Road No"></td>
+        <td><input type="text" name="house_no" placeholder="Enter House No"></td>
+      </tr>
+      
+
+      <!-- Add more rows for other items -->
+    </tbody>
+    <tfoot>
+      <tr>
+      <td><textarea class="short_d" placeholder="Short address / house name" rows="4" cols="80"></textarea></td>
+      </tr>
+    </tfoot>
+   
+    
+  </table>
+</section>
+
+
+
+
+
+<!-- Basic Information----------------------------- -->
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-file-contract"></i>
+      <h4 class="h4">Basic Information</h4>
+    </div> 
+    <thead>
+      <tr>
+        <td>ABAILBEL FROM</td>
+        <td>PROPERTY TYPE</td>
+        <td>BEDROOM</td>
+        <td>BATHROOM</td>
+        <td>BELCONY</td>
+        <td>FLOOR NO</td>
+        <td>SELECT GEND</td>
+        <td>SIZE</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Month</option>
+            <option value="month">January</option>
+            <option value="month">February</option>
+            <option value="month">March</option>
+            <option value="month">April</option>
+            <option value="month">May</option>
+            <option value="month">June</option>
+            <option value="month">July</option>
+            <option value="month">August</option>
+            <option value="month">September</option>
+            <option value="month">October</option>
+            <option value="month">November</option>
+            <option value="month">December</option>
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">House</option>
+            <option value="unit">Unit</option>
+            <option value="flat">Flat</option>
+            <option value="floor">Floor</option>
+            <option value="appartment">Appartment</option>
+            <option value="room">Room</option>
+            <option value="seat">Seat</option>
+
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="number">
+            <option value="">Select Bedroom</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="number">
+            <option value="">Select Bathroom</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Belcony</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Floor</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Gender</option>
+            <option value="male">Only Male</option>
+            <option value="female">Only Female</option>
+            <option value="anyone">Anyone Can Stay</option>
+          </select>
+        </td>
+        <td><input type="text" name="house_no" placeholder="Size (Sq feet)"></td>
+      </tr>
+      
+
+      <!-- Add more rows for other items -->
+    </tbody>
+   
+    
+  </table>
+</section>
+
+<!-- Price Giving-------- -->
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+      <h4 class="h4">Price</h4>
+    </div>
+
+
+    <thead>
+      <tr>
+        <td>APPARTMENT PRICE</td>
+        <td>PRICE FOR</td>
+      </tr>
+    </thead>
+
+    <tbody id="cart-items-container"></tbody>
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td><input type="text" name="house_no" placeholder="Price"></td>
+        <td class="table_info">
+          <select name="category">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+
+          </select>
+        </td>
+        
+      </tr>
+      
+
+      <!-- Add more rows for other items -->
+    </tbody>
+    
+  
+  
+  </table>
+  </section>
+
+
+<!-- Price included with---------------------- -->
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-plus"></i>
+      <h4 class="h4">Price Included With</h4>
+    </div>
+    <hr>
+
+    <div class="form-group checkbox-group">
+      <div>
+          <input type="checkbox" id="electricity" name="utility" value="electricity">
+          <label for="electricity">Electricity bill</label>
+      </div>
+      <div>
+          <input type="checkbox" id="gas" name="utility" value="gas">
+          <label for="gas">Gas bill</label>
+      </div>
+      <div>
+          <input type="checkbox" id="water" name="utility" value="water">
+          <label for="water">Water bill</label>
+      </div>
+      <div>
+          <input type="checkbox" id="lift" name="utility" value="lift">
+          <label for="lift">Lift bill</label>
+      </div>
+      <div>
+          <input type="checkbox" id="security" name="utility" value="security">
+          <label for="security">Security bill</label>
+      </div>
+    </div>
+
+    
+    
+  
+  
+   
+  
+  
+  </table>
+  </section>
+
+
+
+
+
+<!-- Save Property button---------- -->
+
+<section id="save-property-section" class="section-p1" onclick="window.location.href='adPropertyImg.html';">
+  <div class="save-property-container">
+      <button class="save-property-btn">
+          <i class="fa-solid fa-save"></i> Save Property
+      </button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+
+  <!---favicon-------------------->
+
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!----custom css link--->
+
+
+  <link rel="stylesheet" href="./assets/css/property_style.css" >
+
+
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+<!-- Header part work--------------------------->
+
+<section id="header">
+
+  <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="REBYELL LOGO"> </a>
+
+  <div>
+    <ul id="navbar">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="feature.html">Feature</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about_us.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li>
+        <div class="search-box">
+          <input type="text" class="search-txt" placeholder="Search">
+          <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+        </div>
+    
+        
+      </li>
+      <li>
+        <a id="lg-bag" href="cart.html"><i class="fa-regular fa-heart"></i></a>
+      </li>
+      <!--close icon-->
+      <li><a href="#" onclick="window.location.href='login.html';">Login</a></li>
+      <li><a href="#" onclick="window.location.href='signup.html';">Sign Up</a></li>
+      
+      <li>
+        <a  onclick="toggleMenu()"><i class="fa-regular fa-user"></i></i></a>
+      </li>
+      
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+        </div>
+      </div>
+      
+
+    </ul>
+
+</section>
+
+
+<!-- Updated Upload Image Section------------------- -->
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa fa-image"></i>
+      <h4 class="h4">upload Photo</h4>
+    </div>
+    <hr>
+
+    <div class="upload-image-container">
+      <div class="upload-photo-box">
+        <label for="upload-photo">
+          <i class="fa fa-cloud-upload"></i>
+          <p>Drag & Drop photo here or click to upload</p>
+        </label>
+        <input type="file" id="upload-photo" name="upload-photo" accept="image/*" />
+      </div>
+    </div>
+    
+    <!-- Image Preview Table Section -->
+    <div class="image-preview-section">
+      <table id="image-preview-table" class="image-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>File Name</th>
+            <th>File Size</th>
+          </tr>
+        </thead>
+        <tbody id="image-preview-body">
+          <!-- Image rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>     
+    
+
+  
+  </table>
+</section>
+
+
+<!--Uploading Details section--------------------- -->
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa fa-info-circle"></i>
+      <h4 class="h4">Details</h4>
+    </div>
+    <hr>
+
+    <div class="details-section">
+      
+        <span>(Contact details and website link not allowed in this section.)</span>
+      
+      <div class="editor-toolbar">
+        <button type="button" title="Undo"><i class="fa fa-undo"></i></button>
+        <button type="button" title="Bold"><i class="fa fa-bold"></i></button>
+        <button type="button" title="Italic"><i class="fa fa-italic"></i></button>
+        <button type="button" title="Underline"><i class="fa fa-underline"></i></button>
+      </div>
+      
+      <textarea id="property-details" name="property-details" rows="5" placeholder="Write something about your property!"></textarea>
+    </div>    
+         
+    
+
+  
+  </table>
+</section>
+
+
+
+<!--Uploading Details section--------------------- -->
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4 class="h4">Mark in Maps</h4>
+    </div>
+    <hr>
+
+    <div class="mark-maps-section">
+
+        <span>(Please click on the map to mark your exact location)</span>
+      
+      <!-- This div will hold the map -->
+      <div id="map"></div>
+    
+      <!-- Hidden inputs to store latitude and longitude -->
+      <input type="hidden" id="latitude" name="latitude" />
+      <input type="hidden" id="longitude" name="longitude" />
+    </div>
+    <button type="submit">Submit Location</button>
+
+    
+  
+  </table>
+</section>
+
+
+
+<!-- Save Property button---------- -->
+
+<section id="save-property-section" class="section-p1">
+  <div class="submit-property-container">
+      <button class="submit-property-btn">
+           Submit Property
+      </button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Uploaded Image preview  table section -------------------------------------------->
+
+<script>
+  document.getElementById('upload-photo').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        // Create a new table row for the image
+        const tableBody = document.getElementById('image-preview-body');
+        const newRow = document.createElement('tr');
+        
+        // Create image cell
+        const imageCell = document.createElement('td');
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.alt = file.name;
+        img.style.width = '100px'; // Set image width
+        imageCell.appendChild(img);
+
+        // Create file name cell
+        const nameCell = document.createElement('td');
+        nameCell.textContent = file.name;
+
+        // Create file size cell
+        const sizeCell = document.createElement('td');
+        sizeCell.textContent = (file.size / 1024).toFixed(2) + ' KB';
+
+        // Append cells to the row
+        newRow.appendChild(imageCell);
+        newRow.appendChild(nameCell);
+        newRow.appendChild(sizeCell);
+
+        // Append the row to the table body
+        tableBody.appendChild(newRow);
+      };
+      reader.readAsDataURL(file); // Convert the file to a data URL for preview
+    }
+  });
+</script>
+
+
+
+
+
+
+<!-- Google  Maps API--------------------------------------------------------------- -->
+
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // Initialize the map centered on Bangladesh (23.6850, 90.3563) with zoom level 7
+  var map = L.map('map').setView([23.6850, 90.3563], 7); // Coordinates for Bangladesh
+
+  // Add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19
+  }).addTo(map);
+
+  // Initialize marker variable
+  var marker;
+
+  // Add a click event to place a marker
+  map.on('click', function(e) {
+    if (marker) {
+      // Move the existing marker to the clicked location
+      marker.setLatLng(e.latlng);
+    } else {
+      // Create a new marker at the clicked location
+      marker = L.marker(e.latlng).addTo(map);
+    }
+
+    // Center the map to the marker
+    map.setView(e.latlng);
+
+    // Store latitude and longitude in hidden input fields
+    document.getElementById('latitude').value = e.latlng.lat;
+    document.getElementById('longitude').value = e.latlng.lng;
+
+    console.log("Selected location:", e.latlng.lat, e.latlng.lng);  // For debugging
+  });
+</script>
+
+
+
+
+</body>
+</html>

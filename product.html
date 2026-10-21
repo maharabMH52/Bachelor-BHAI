@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+  <!---favicon-------------------->
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!----custom css link--->
+
+  <link rel="stylesheet" href="./assets/css/property_style.css" >
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+<!---Single  Apartment Rent flat details===============------>
+
+<section id="prodetails_heading" class="section-p1">
+
+  <h2>03 Bed Room Flat</h2>
+
+</section>
+
+<section id="prodetails" class="section-p1">
+    <h4 class="h4">Apartment Image</h4>
+
+    <div class="small-img-group">
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+
+
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+
+
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+
+
+      <div class="small-img-col">
+        <img src="./assets/image/Ad/Room-01.jpg" width="100%" class="small-img" alt="">
+      </div>
+    </div>
+  
+  
+</section>
+
+
+<!-- cart  details===========================-->
+
+
+<!-- Summary section============================-->
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-regular fa-file-lines"></i>
+      <h4 class="h4">Summary</h4>
+    </div>
+    <hr>
+
+    <p class="p_details">The Perfect Shirt is crafted from the highest grade single source extra-long staple cotton. Representing less than 1% of the global cotton production, the fibres of our extra-long staple cotton are twice as strong as conventional varieties. The stronger fibres resist pulling, breaking and tearing, resulting in a Shirt that is incredibly resilient and keep its form wash after wash.</p>
+  
+  </table>
+</section>
+
+
+<!-- cradit section---------- -->
+
+
+<section id="cradit" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-unlock-keyhole"></i>
+      <h4 class="h4">Unlock Information</h4>
+    </div>
+    <hr class="hr">
+
+    <div class="cart-content">
+      <div class="info-container">
+        <p class="c_details">You have not enough credits to unlock information. Unlocking information requires 10 credits. You can purchase credits by Bkash.</p>
+        <button class="credit_btn">
+          <i class="fa-solid fa-credit-card"></i> Purchase Credits
+        </button>
+      </div>
+    </div>
+  </table>
+</section>
+
+
+
+<!-- Basic Information----------------------------- -->
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-file-contract"></i>
+      <h4 class="h4">Basic Information</h4>
+    </div>
+      <hr>
+      <div class="details-row">
+        <i class="fa-solid fa-bed"></i>
+        <p>03 Bedroom </p>
+        
+        <i class="fa-solid fa-shower"></i>
+        <p>02 Shower</p>
+
+        <i class="fa-solid fa-stairs"></i>
+        <p>3rd  Floor</p>
+
+        
+        <i class="fa-solid fa-chart-area"></i>
+        <p>1200 sq ft</p>
+      </div>
+    <thead>
+      <tr>
+        <td>PROPERTY ID</td>
+        <td>PROPERTY PHOTO</td>
+        <td>UPDATED AT</td>
+        <td>ABAILBEL FROM</td>
+        <td>CATEGORY</td>
+        <td>PROPERTY TYPE</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td class="table_info">
+          <input type="text" name="property-id" placeholder="Enter Property ID">
+        </td>
+        <td class="table_info">
+          <input type="file" name="property-photo" accept="image/*" required>
+        </td>
+        <td class="table_info">
+          <input type="datetime-local" name="updated-at">
+        </td>
+        <td class="table_info">
+          <input type="date" name="available-from">
+        </td>
+        <td class="table_info">
+          <select name="category">
+            <option value="">Select Category</option>
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+          </select>
+        </td>
+        <td class="table_info">
+          <select name="property-type">
+            <option value="">Select Property Type</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="office">Office</option>
+            <option value="land">Land</option>
+          </select>
+        </td>
+      </tr>
+      <!-- Add more rows for other items -->
+    </tbody>
+   
+    </tbody>
+  </table>
+</section>
+
+<!-- map section============================-->
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4 class="h4">Location Information</h4>
+    </div>
+    <hr>
+    <thead>
+      <tr>
+        <td>DIVISION</td>
+        <td>DISTRICT</td>
+        <td>AREA / THANA</td>
+        <td>SUB AREA</td>
+        <td>SHORT ADDRESS</td>
+        <td>HOLDING NO</td>
+      </tr>
+    </thead>
+    <tbody id="cart-items-container">
+      <!-- Dynamically added product items will go here -->
+      <tr>
+        <td><input type="text" name="division" placeholder="Enter Division"></td>
+        <td><input type="text" name="district" placeholder="Enter District"></td>
+        <td><input type="text" name="area" placeholder="Enter Area / Thana"></td>
+        <td><input type="text" name="sub_area" placeholder="Enter Sub Area"></td>
+        <td><input type="text" name="short_address" placeholder="Enter Short Address"></td>
+        <td><input type="text" name="holding_no" placeholder="Enter Holding No"></td>
+      </tr>
+      
+      <!-- Add more rows for other items -->
+    </tbody>
+   
+    </tbody>
+  </table>
+</section>
+
+
+
+
+<!-- price setion --------------- -->
+
+
+<section id="cart" class="section-p1">
+  <table width="100%">
+    <div class="cart-header">
+      <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+      <h4 class="h4">Price</h4>
+    </div>
+    <hr>
+
+    <div class="cart-header"></div>
+      <h4 class="h5">11000 BDT</h4>
+      <p class="p_details">Monthly</p>
+    </div>
+
+    
+  
+  </table>
+</section>
+
+
+
+
+
+
+
+
+</body>
+</html>

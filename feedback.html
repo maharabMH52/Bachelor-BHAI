@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACHELOR BHAI</title>
+
+  <!---favicon-------------------->
+
+  <link rel="shortcut icon" href="assets/image/logo/Bachelor-Bhai-House-Transparent-Logo-10(250x250px).png" type="image/x-icon">
+
+
+  <!--icon file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!----custom css link--->
+
+  <link rel="stylesheet" href="./assets/css/style-prefix.css" >
+
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!-- Header part work--------------------------->
+
+  <section id="header">
+
+    <a href="#"><img class="logo_img" src="assets/image/logo/Bachelor-Bhai-LOGO-01-Final(500x500px).png" class="logo" alt="Bachelor BHAI"> </a>
+
+    <div>
+      <ul id="navbar">
+        
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="feature.html">Feature</a></li>
+        <li><a class="active" href="feedback.html">Feedback</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+        <li>
+          <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search">
+            <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+          </div>
+      
+          
+        </li>
+        <li>
+          <a id="lg-bag" href="cart.html"><i class="fa-regular fa-heart"></i></a>
+        </li>
+        <!--close icon-->
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+        
+        <li>
+          <a><i class="fa-regular fa-user"></i></i></a>
+        </li>
+        
+        
+      </ul>
+
+  
+  </section>
+
+  <!--####-blog section-========================-->
+
+
+
+
+  <section id="feedback">
+    <div class="feedback_content">
+        <h3 class="blog_heading">Feedback</h3>
+        <p>We value your thoughts and suggestions! Please share your experience with us.</p>
+    </div>
+
+    <button class="add_complaint_btn" onclick="window.location.href='submit_complaint.html';">+ Submit Complaint</button>
+
+    <div class="container">
+        <div class="review-form">
+            <h2>Submit a Review</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="" class="option">Select a category</option>
+                        <option value="House Rental">House Rental</option>
+                        <option value="Home Appliance">Home Appliance</option>
+                        <option value="Meal Service">Meal Service</option>
+                        <option value="Home Shifting">Home Shifting</option>
+                        <option value="Roommate Seeking">Roommate Seeking</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="" class="option">Select a rating</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </div>
+
+
+        <div class="reviews">
+            <h2>Recent Reviews</h2>
+            <div id="reviewsList"></div>
+        </div>
+    </div>
+    <button class="add_complaint_btn" onclick="window.location.href='submit_complaint.html';">+ Submit Complaint</button>
+    
+</section>
+
+
+
+
+<hr>
+  
+  
+
+
+  <footer id="footer" class="section-p1">
+    <div class="col">
+      <img class="logo" src="assets/image/logo/Bachelor-Bhai-Transparent-Logo-10(500x500px).png" alt="">
+      <h4>Contact</h4>
+      <p>
+        <strong>Address: </strong> 100 feet Madani Avenue, Dhaka
+      </p>
+      <p>
+        <strong>Phone: </strong> +880 17000000
+      </p>
+      <p>
+        <strong>Hours: </strong> 24/7
+      </p>
+
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="copyright">
+      <p>© 2024, Bachelor BHAI Ltd. &nbsp; Terms |&nbsp; Privacy |&nbsp; Guidelines </p>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Feed back section javascript---------------- -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewsList = document.getElementById('reviewsList');
+
+        // Load existing reviews from localStorage
+        let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+        displayReviews();
+
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const category = document.getElementById('category').value;
+            const rating = document.getElementById('rating').value;
+            const review = document.getElementById('review').value;
+
+            const newReview = {
+                name: name,
+                category: category,
+                rating: rating,
+                review: review,
+                date: new Date().toLocaleDateString()
+            };
+
+            reviews.unshift(newReview);
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+
+            displayReviews();
+            reviewForm.reset();
+        });
+
+        function displayReviews() {
+            reviewsList.innerHTML = '';
+            reviews.forEach(function(review) {
+                const reviewElement = document.createElement('div');
+                reviewElement.classList.add('review');
+                reviewElement.innerHTML = `
+                    <h3>${review.category}</h3>
+                    <p><strong>${review.name}</strong> - ${review.date}</p>
+                    <p class="rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</p>
+                    <p>${review.review}</p>
+                `;
+                reviewsList.appendChild(reviewElement);
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
